@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import 'smart-webcomponents-react/source/styles/smart.default.css';
-import styles from '../styles/Home.module.css';
-import GetData from '../public/data'; //NextJS cannot load named modules
+import styles from './styles/Home.module.css';
+//import GetData from './public/data'; //NextJS cannot load named modules
 
 //Dynamically import the Smart.Grid component
 const Grid = dynamic(() => import('smart-webcomponents-react/grid'), {
@@ -49,7 +49,7 @@ function Home() {
                 enabled: true
             }
         },
-        dataSource = GetData(300),
+        dataSource = null,//GetData(300),
         dataSourceSettings = {
             dataFields: [
                 { name: 'id', dataType: 'number' },

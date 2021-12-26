@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import myGrid from "Components/Grid/NextjsGrid/Grid";
+
 
 ReactDOM.render(
   <React.StrictMode>
-    {/*<App />*/}
-      <myGrid></myGrid>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
